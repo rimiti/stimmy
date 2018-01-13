@@ -1,0 +1,25 @@
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log
+
+# Dependencies
+node_modules/
+
+# Coverage
+coverage/
+jest_0/
+
+# Transpiled files
+dist/
+
+# VS Code
+.vscode
+jsconfig.json
+
+# Misc
+.DS_Store
+tmp/
+
+# Intellij
+.idea/
