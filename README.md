@@ -3,7 +3,7 @@
 [![Dependencies][prod-dependencies-badge]][prod-dependencies]
 [![Dependencies][dev-dependencies-badge]][dev-dependencies]
 [![Code Climate score][codeclimate-score-badge]][codeclimate-score]
-[![Coveralls][coverage-badge]][coverage]
+[![Codecov][coverage-badge]][coverage]
 [![Code Climate coverage][codeclimate-issues-badge]][codeclimate-issues]
 [![Node.js version][nodejs-badge]][nodejs]
 [![NPM version][npm-badge]][npm]
@@ -70,8 +70,8 @@ MIT © [Dimitri DO BAIRRO](https://github.com/rimiti/stimmy/blob/master/LICENSE)
 [security-version]: https://nodesecurity.io/orgs/dim-solution/projects/e65e3a46-4110-4de2-ae92-1584b59d3ff0
 [codeclimate-score-badge]: https://api.codeclimate.com/v1/badges/7951ca62e66be94eba69/maintainability
 [codeclimate-score]: https://codeclimate.com/github/rimiti/stimmy/maintainability
-[coverage-badge]: https://coveralls.io/repos/github/rimiti/stimmy/badge.svg
-[coverage]: https://coveralls.io/github/rimiti/stimmy
+[coverage-badge]: https://codecov.io/gh/rimiti/stimmy/branch/master/graph/badge.svg
+[coverage]: https://codecov.io/gh/rimiti/stimmy
 [codeclimate-issues-badge]: https://codeclimate.com/github/rimiti/stimmy/badges/issue_count.svg
 [codeclimate-issues]: https://codeclimate.com/github/rimiti/stimmy
 [nodejs-badge]: https://img.shields.io/badge/node->=%206.9.0-blue.svg?style=flat-square
