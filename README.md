@@ -66,7 +66,7 @@ const stimmy = require('stimmy');
 ### From an object
 
 ```javascript
-  const str = stimmy('{timmy} !! My hobby is {hobby}...', {timmy: 'Timmmmmmmyy !!', hobby: 'running'});
+  const str = stimmy('{timmy} My hobby is {hobby}...', {timmy: 'Timmmmmmmyy !!', hobby: 'running'});
   // Timmmmmmmyy !! My hobby is running...
 ```
 
