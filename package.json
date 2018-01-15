@@ -14,8 +14,8 @@
     "test": "npm run test-only",
     "test-only": "jest --coverage",
     "test:watch": "jest --watch",
-    "build": "babel src/**/*.js src/**/**/*.js src/*.js -d dist",
-    "build:watch": "babel --watch src/**/*.js src/**/**/*.js src/*.js -d dist"
+    "build": "babel src/*.js -d dist --source-maps inline --minified",
+    "build:watch": "babel --watch src/*.js -d dist --source-maps inline"
   },
   "repository": {
     "type": "git",
