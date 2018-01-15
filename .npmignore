@@ -25,3 +25,9 @@ build/Release
 
 # Dependency directory
 node_modules
+
+# Tests
+__tests__
+
+# Sources files (to be light)
+src
