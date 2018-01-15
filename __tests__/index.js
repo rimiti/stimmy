@@ -1,4 +1,4 @@
-// @flow
+/* eslint-disable flowtype/require-valid-file-annotation */
 import stimmy from '../src';
 
 describe('Replace brackets with array items', () => {
