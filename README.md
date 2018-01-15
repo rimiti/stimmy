@@ -51,8 +51,6 @@ const stimmy = require('stimmy');
 
 ### From an array
 
-  __Exemple__
-
 ```javascript
   const str = stimmy('This {0} is {1}!', ['module', 'awesome']);
   // This module is awesome!
@@ -63,13 +61,9 @@ const stimmy = require('stimmy');
   // 100% of code coverage, it's so amazing...
 ```
 
-
 <a name="fromObject"/>
 
 ### From an object
-
-  __Exemple__
-
 
 ```javascript
   const str = stimmy('{timmy} !! My hobby is {hobby}...', {timmy: 'Timmmmmmmyy !!', hobby: 'running'});
