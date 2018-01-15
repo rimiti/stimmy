@@ -25,12 +25,14 @@ $ npm install stimmy --save
 
 ## Features
 
-- ...
+- Can replace variables from an object.
+- Can replace variables from an array.
 
 
 ## Documentation
 
-...
+* [From an array](#fromArray)
+* [From an object](#fromObject)
 
 
 ## Examples
@@ -44,6 +46,41 @@ import stimmy from 'stimmy';
 ```javascript
 const stimmy = require('stimmy');
 ```
+
+<a name="fromArray"/>
+
+### From an array
+
+  __Exemple__
+
+```javascript
+  const str = stimmy('This {0} is {1}!', ['module', 'awesome']);
+  // This module is awesome!
+```
+
+```javascript
+  const str = stimmy('{0}% of code coverage, it\'s {1}...', [100, 'so amazing']);
+  // 100% of code coverage, it's so amazing...
+```
+
+
+<a name="fromObject"/>
+
+### From an object
+
+  __Exemple__
+
+
+```javascript
+  const str = stimmy('{timmy} !! My hobby is {hobby}...', {timmy: 'Timmmmmmmyy !!', hobby: 'running'});
+  // Timmmmmmmyy !! My hobby is running...
+```
+
+```javascript
+  const str = stimmy('My name is {name}, I\'m {age}.', {name: 'stimmy', age: 25});
+  // My name is stimmy, I'm 25.
+```
+
 
 ## Scripts
 
