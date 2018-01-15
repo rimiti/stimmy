@@ -1,8 +1,7 @@
 {
   "plugins": [
-    ["transform-es2015-modules-commonjs", {
-      "allowTopLevelThis": true
-    }],
+    ["transform-es2015-modules-commonjs"],
+    ["add-module-exports"],
     ["transform-flow-strip-types"],
     ["transform-async-to-generator"],
     ["transform-es2015-parameters"],
