@@ -7,4 +7,4 @@
 suppress_comment= \\(.\\|\n\\)*\\$FlowFixMe
 
 [version]
-0.63.1
+0.64.0
