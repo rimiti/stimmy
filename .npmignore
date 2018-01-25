@@ -28,3 +28,18 @@ node_modules
 
 # Tests
 __tests__
+
+# Sources files
+src
+
+# Dev configuration files
+.babelrc
+.codeclimate.yml
+.editorconfig
+.eslintignore
+.eslintrc
+.flowconfig
+.gitignore
+.travis.yml
+LICENSE
+README.md
