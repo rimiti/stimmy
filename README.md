@@ -99,7 +99,7 @@ MIT © [Dimitri DO BAIRRO](https://github.com/rimiti/stimmy/blob/master/LICENSE)
 [dev-dependencies]: https://david-dm.org/rimiti/stimmy?type=dev
 [security-version-badge]: https://nodesecurity.io/orgs/dim-solution/projects/1432f793-3a27-4a25-9274-fe30a07104f7/badge
 [security-version]: https://nodesecurity.io/orgs/dim-solution/projects/1432f793-3a27-4a25-9274-fe30a07104f7
-[codeclimate-score-badge]: https://api.codeclimate.com/v1/badges/7951ca62e66be94eba69/maintainability
+[codeclimate-score-badge]: https://api.codeclimate.com/v1/badges/4d4c1ba660e878509721/maintainability
 [codeclimate-score]: https://codeclimate.com/github/rimiti/stimmy/maintainability
 [coverage-badge]: https://codecov.io/gh/rimiti/stimmy/branch/master/graph/badge.svg
 [coverage]: https://codecov.io/gh/rimiti/stimmy
