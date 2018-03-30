@@ -62,7 +62,7 @@ const myReplacer2 = stimmy('{{', '}}')
 ```
 
 ```javascript
-  const str = stim``my('{0}% of code coverage, it\'s {1}...', [100, 'so amazing']);
+  const str = myReplacer('{0}% of code coverage, it\'s {1}...', [100, 'so amazing']);
   // 100% of code coverage, it's so amazing...
 ```
 
@@ -71,12 +71,12 @@ const myReplacer2 = stimmy('{{', '}}')
 ### From an object
 
 ```javascript
-  const str = stimmy('{timmy} My hobby is {hobby}...', {timmy: 'Timmmmmmmyy !!', hobby: 'running'});
+  const str = myReplacer('{timmy} My hobby is {hobby}...', {timmy: 'Timmmmmmmyy !!', hobby: 'running'});
   // Timmmmmmmyy !! My hobby is running...
 ```
 
 ```javascript
-  const str = stimmy('My name is {name}, I\'m {age}.', {name: 'stimmy', age: 25});
+  const str = myReplacer('My name is {name}, I\'m {age}.', {name: 'stimmy', age: 25});
   // My name is stimmy, I'm 25.
 ```
 
