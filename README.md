@@ -46,18 +46,23 @@ import stimmy from 'stimmy';
 ```javascript
 const stimmy = require('stimmy');
 ```
+**init pattern**
+```
+const myReplacer = stimmy(); // defaults to ('{','}')
+const myReplacer2 = stimmy('{{', '}}')
+```
 
 <a name="fromArray"/>
 
 ### From an array
 
 ```javascript
-  const str = stimmy('This {0} is {1}!', ['module', 'awesome']);
+  const str = myReplacer('This {0} is {1}!', ['module', 'awesome']);
   // This module is awesome!
 ```
 
 ```javascript
-  const str = stimmy('{0}% of code coverage, it\'s {1}...', [100, 'so amazing']);
+  const str = stim``my('{0}% of code coverage, it\'s {1}...', [100, 'so amazing']);
   // 100% of code coverage, it's so amazing...
 ```
 
