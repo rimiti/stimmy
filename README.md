@@ -19,7 +19,7 @@ This module provides a string variables replacer.
 
 ## Install
 
-```
+```bash
 $ npm install stimmy --save
 ```
 
@@ -46,19 +46,27 @@ import stimmy from 'stimmy';
 ```javascript
 const stimmy = require('stimmy');
 ```
+**init pattern**
+```javascript
+// As default, use the {myVariable} pattern
+const replacer = stimmy();
+
+// If you want to customized default pattern (ex: {{myVariable}}
+const replacer = stimmy('{{', '}}')
+```
 
 <a name="fromArray"/>
 
 ### From an array
 
 ```javascript
-  const str = stimmy('This {0} is {1}!', ['module', 'awesome']);
-  // This module is awesome!
+const str = replacer('This {0} is {1}!', ['module', 'awesome']);
+// This module is awesome!
 ```
 
 ```javascript
-  const str = stimmy('{0}% of code coverage, it\'s {1}...', [100, 'so amazing']);
-  // 100% of code coverage, it's so amazing...
+const str = replacer('{0}% of code coverage, it\'s {1}...', [100, 'so amazing']);
+// 100% of code coverage, it's so amazing...
 ```
 
 <a name="fromObject"/>
@@ -66,15 +74,14 @@ const stimmy = require('stimmy');
 ### From an object
 
 ```javascript
-  const str = stimmy('{timmy} My hobby is {hobby}...', {timmy: 'Timmmmmmmyy !!', hobby: 'running'});
-  // Timmmmmmmyy !! My hobby is running...
+const str = replacer('{timmy} My hobby is {hobby}...', {timmy: 'Timmmmmmmyy !!', hobby: 'running'});
+// Timmmmmmmyy !! My hobby is running...
 ```
 
 ```javascript
-  const str = stimmy('My name is {name}, I\'m {age}.', {name: 'stimmy', age: 25});
-  // My name is stimmy, I'm 25.
+const str = replacer('My name is {name}, I\'m {age}.', {name: 'stimmy', age: 25});
+// My name is stimmy, I'm 25.
 ```
-
 
 ## Scripts
 
