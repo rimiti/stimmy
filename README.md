@@ -52,7 +52,7 @@ const stimmy = require('stimmy');
 const replacer = stimmy();
 
 // If you want to customized default pattern (ex: {{myVariable}}
-const replacerCustomized = stimmy('{{', '}}')
+const replacer = stimmy('{{', '}}')
 ```
 
 <a name="fromArray"/>
