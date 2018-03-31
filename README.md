@@ -20,7 +20,7 @@ This module provides a string variables replacer.
 ## Install
 
 ```bash
-$ npm install stimmy --save
+$ npm install @rimiti/stimmy --save
 ```
 
 ## Features
@@ -39,12 +39,12 @@ $ npm install stimmy --save
 
 **From import**
 ```javascript
-import stimmy from 'stimmy';
+import stimmy from '@rimiti/stimmy';
 ```
 
 **From require**
 ```javascript
-const stimmy = require('stimmy');
+const stimmy = require('@rimiti/stimmy');
 ```
 **init pattern**
 ```javascript
