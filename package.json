@@ -1,6 +1,6 @@
 {
   "name": "@rimiti/stimmy",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "Replace your string variables by your values easily.",
   "license": "MIT",
   "main": "dist/index.js",
