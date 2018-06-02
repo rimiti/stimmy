@@ -1,5 +1,6 @@
 # stimmy
 
+[![Green Keeper][greenkeeper-badge]][greenkeeper-]
 [![Dependencies][prod-dependencies-badge]][prod-dependencies]
 [![Dependencies][dev-dependencies-badge]][dev-dependencies]
 [![Code Climate score][codeclimate-score-badge]][codeclimate-score]
@@ -100,6 +101,8 @@ Run using npm run <script> command.
 ## License
 MIT © [Dimitri DO BAIRRO](https://github.com/rimiti/stimmy/blob/master/LICENSE)
 
+[greenkeeper-badge]: https://badges.greenkeeper.io/rimiti/stimmy.svg
+[greenkeeper]: https://greenkeeper.io/
 [prod-dependencies-badge]: https://david-dm.org/rimiti/stimmy/status.svg
 [prod-dependencies]: https://david-dm.org/rimiti/stimmy
 [dev-dependencies-badge]: https://david-dm.org/rimiti/stimmy/dev-status.svg
