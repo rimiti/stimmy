@@ -1,6 +1,6 @@
 # stimmy
 
-[![Green Keeper][greenkeeper-badge]][greenkeeper-]
+[![Green Keeper][greenkeeper-badge]][greenkeeper]
 [![Dependencies][prod-dependencies-badge]][prod-dependencies]
 [![Dependencies][dev-dependencies-badge]][dev-dependencies]
 [![Code Climate score][codeclimate-score-badge]][codeclimate-score]
