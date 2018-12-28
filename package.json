@@ -43,20 +43,20 @@
   "homepage": "https://github.com/rimiti/stimmy#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-core": "~6.26.0",
-    "babel-eslint": "~8.2.2",
-    "babel-jest": "^22.4.1",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-plugin-transform-es2015-modules-commonjs": "~6.26.0",
+    "babel-core": "~6.26.3",
+    "babel-eslint": "~10.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "~6.26.2",
     "babel-plugin-transform-flow-strip-types": "~6.22.0",
     "babel-plugin-transform-runtime": "~6.23.0",
     "babel-preset-stage-3": "~6.24.1",
-    "eslint": "^4.18.2",
-    "eslint-config-airbnb-base": "~12.1.0",
-    "eslint-plugin-flowtype": "~2.47.1",
-    "eslint-plugin-import": "~2.12.0",
-    "flow-bin": "~0.72.0",
-    "jest": "^22.4.2"
+    "eslint": "^5.11.1",
+    "eslint-config-airbnb-base": "~13.1.0",
+    "eslint-plugin-flowtype": "~3.2.0",
+    "eslint-plugin-import": "~2.14.0",
+    "flow-bin": "~0.89.0",
+    "jest": "^23.6.0"
   },
   "jest": {
     "coverageThreshold": {
