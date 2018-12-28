@@ -4,8 +4,6 @@
 [![Code Climate score][codeclimate-score-badge]][codeclimate-score]
 [![Codecov][coverage-badge]][coverage]
 [![Code Climate issue][codeclimate-issues-badge]][codeclimate-issues]
-[![Node.js version][nodejs-badge]][nodejs]
-[![NPM version][npm-badge]][npm]
 [![Build Status][travis-badge]][travis-ci]
 [![MIT License][license-badge]][LICENSE]
 [![PRs Welcome][prs-badge]][prs]
@@ -106,10 +104,6 @@ MIT © [Dimitri DO BAIRRO](https://github.com/rimiti/stimmy/blob/master/LICENSE)
 [coverage]: https://codecov.io/gh/rimiti/stimmy
 [codeclimate-issues-badge]: https://codeclimate.com/github/rimiti/stimmy/badges/issue_count.svg
 [codeclimate-issues]: https://codeclimate.com/github/rimiti/stimmy
-[nodejs-badge]: https://img.shields.io/badge/node->=%206.9.0-blue.svg?style=flat-square
-[nodejs]: https://nodejs.org/dist/latest-v6.x/docs/api/
-[npm-badge]: https://img.shields.io/badge/npm->=%203.10.8-blue.svg?style=flat-square
-[npm]: https://docs.npmjs.com/
 [travis-badge]: https://travis-ci.org/rimiti/stimmy.svg?branch=master
 [travis-ci]: https://travis-ci.org/rimiti/stimmy
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
