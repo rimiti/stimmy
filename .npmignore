@@ -32,6 +32,9 @@ __tests__
 # Sources files
 src
 
+# IDE
+.idea
+
 # Dev configuration files
 .babelrc
 .codeclimate.yml
