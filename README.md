@@ -1,15 +1,12 @@
 # stimmy
 
-[![Green Keeper][greenkeeper-badge]][greenkeeper]
 [![Dependencies][prod-dependencies-badge]][prod-dependencies]
-[![Dependencies][dev-dependencies-badge]][dev-dependencies]
 [![Code Climate score][codeclimate-score-badge]][codeclimate-score]
 [![Codecov][coverage-badge]][coverage]
 [![Code Climate issue][codeclimate-issues-badge]][codeclimate-issues]
 [![Node.js version][nodejs-badge]][nodejs]
 [![NPM version][npm-badge]][npm]
 [![Build Status][travis-badge]][travis-ci]
-[![Security version][security-version-badge]][security-version]
 [![MIT License][license-badge]][LICENSE]
 [![PRs Welcome][prs-badge]][prs]
 
@@ -101,14 +98,8 @@ Run using npm run <script> command.
 ## License
 MIT © [Dimitri DO BAIRRO](https://github.com/rimiti/stimmy/blob/master/LICENSE)
 
-[greenkeeper-badge]: https://badges.greenkeeper.io/rimiti/stimmy.svg
-[greenkeeper]: https://greenkeeper.io/
 [prod-dependencies-badge]: https://david-dm.org/rimiti/stimmy/status.svg
 [prod-dependencies]: https://david-dm.org/rimiti/stimmy
-[dev-dependencies-badge]: https://david-dm.org/rimiti/stimmy/dev-status.svg
-[dev-dependencies]: https://david-dm.org/rimiti/stimmy?type=dev
-[security-version-badge]: https://nodesecurity.io/orgs/dim-solution/projects/1432f793-3a27-4a25-9274-fe30a07104f7/badge
-[security-version]: https://nodesecurity.io/orgs/dim-solution/projects/1432f793-3a27-4a25-9274-fe30a07104f7
 [codeclimate-score-badge]: https://api.codeclimate.com/v1/badges/4d4c1ba660e878509721/maintainability
 [codeclimate-score]: https://codeclimate.com/github/rimiti/stimmy/maintainability
 [coverage-badge]: https://codecov.io/gh/rimiti/stimmy/branch/master/graph/badge.svg
