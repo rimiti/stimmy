@@ -13,7 +13,9 @@ export default function (start: string = '{', end: string = '}'): Function {
     if (typeof value === 'string' && items instanceof Array) {
       // $FlowFixMe: Flow doesn't understand computed values
       return value.replace(arrayReg, (i) => items[i.replace(startReg, '').replace(endReg, '')]);
-    } else if (typeof value === 'string' && items instanceof Object) {
+    }
+
+    if (typeof value === 'string' && items instanceof Object) {
       return value.replace(objectReg, (i) => {
         const key = i.replace(startReg, '').replace(endReg, '');
         // $FlowFixMe: Flow doesn't understand computed values
@@ -24,4 +26,3 @@ export default function (start: string = '{', end: string = '}'): Function {
     return value;
   };
 }
-
