@@ -1,7 +1,7 @@
 language: node_js
 node_js:
-  - lts
-  - current
+  - node
+  - lts/*
 before_install:
   - npm i -g codecov
 install:
