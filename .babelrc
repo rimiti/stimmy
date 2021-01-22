@@ -1,17 +1,12 @@
 {
-  "plugins": [
-    ["add-module-exports"],
-    ["transform-es2015-modules-commonjs"],
-    ["transform-flow-strip-types"],
-    ["transform-runtime", {
-      "polyfill": false,
-      "regenerator": true
-    }]
-  ],
-  "env": {
-    "production": {
-      "comments": false,
-      "minified": true
+  "presets": [
+    "@babel/preset-flow",
+    [
+      "@babel/preset-env", {
+      "targets": {
+        "node": "current"
+      }
     }
-  }
+    ]
+  ]
 }

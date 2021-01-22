@@ -37,22 +37,22 @@ describe('Replace default pattern', () => {
 
   describe('Replace object values based on their keys', () => {
     it('Replace object values based on one key', () => {
-      const str = replacer('My name is {name}', {name: 'Dimitri'});
+      const str = replacer('My name is {name}', { name: 'Dimitri' });
       expect(str).toEqual('My name is Dimitri');
     });
 
     it('Replace object values based on two keys', () => {
-      const str = replacer('My name is {name} and I\'m {age}.', {name: 'Dimitri', age: 25});
+      const str = replacer('My name is {name} and I\'m {age}.', { name: 'Dimitri', age: 25 });
       expect(str).toEqual('My name is Dimitri and I\'m 25.');
     });
 
     it('Replace object values based on two keys in reverse order', () => {
-      const str = replacer('I\'m {age} and my name is {name}.', {name: 'Dimitri', age: 25});
+      const str = replacer('I\'m {age} and my name is {name}.', { name: 'Dimitri', age: 25 });
       expect(str).toEqual('I\'m 25 and my name is Dimitri.');
     });
 
     it('If the key doesn\'t exist in object, it will not replace it in the string', () => {
-      const str = replacer('I\'m {age}, and my name is {name}.', {name: 'Dimitri'});
+      const str = replacer('I\'m {age}, and my name is {name}.', { name: 'Dimitri' });
       expect(str).toEqual('I\'m {age}, and my name is Dimitri.');
     });
   });
@@ -94,22 +94,22 @@ describe('Replace with custom pattern', () => {
 
   describe('Replace object values based on their keys', () => {
     it('Replace object values based on one key', () => {
-      const str = replacer('My name is {{name}}', {name: 'Dimitri'});
+      const str = replacer('My name is {{name}}', { name: 'Dimitri' });
       expect(str).toEqual('My name is Dimitri');
     });
 
     it('Replace object values based on two keys', () => {
-      const str = replacer('My name is {{name}} and I\'m {{age}}.', {name: 'Dimitri', age: 25});
+      const str = replacer('My name is {{name}} and I\'m {{age}}.', { name: 'Dimitri', age: 25 });
       expect(str).toEqual('My name is Dimitri and I\'m 25.');
     });
 
     it('Replace object values based on two keys in reverse order', () => {
-      const str = replacer('I\'m {{age}} and my name is {{name}}.', {name: 'Dimitri', age: 25});
+      const str = replacer('I\'m {{age}} and my name is {{name}}.', { name: 'Dimitri', age: 25 });
       expect(str).toEqual('I\'m 25 and my name is Dimitri.');
     });
 
     it('If the key doesn\'t exist in object, it will not replace it in the string', () => {
-      const str = replacer('I\'m {{age}}, and my name is {{name}}.', {name: 'Dimitri'});
+      const str = replacer('I\'m {{age}}, and my name is {{name}}.', { name: 'Dimitri' });
       expect(str).toEqual('I\'m {{age}}, and my name is Dimitri.');
     });
   });
