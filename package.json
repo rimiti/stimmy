@@ -3,73 +3,38 @@
   "version": "1.9.0",
   "description": "Replace your string variables by your values easily.",
   "license": "MIT",
+  "author": "Dimitri DO BAIRRO <dimitri.dobairro@dimsolution.com>",
   "main": "dist/index.js",
-  "scripts": {
-    "clean": "rm -rf coverage dist tmp jest_0",
-    "lint": "eslint .",
-    "postlint": "npm run typecheck",
-    "typecheck": "flow check",
-    "pretest": "npm run lint",
-    "prepare": "npm run test && npm run build",
-    "test": "npm run test-only",
-    "test-only": "jest --coverage",
-    "test:watch": "jest --watch",
-    "build": "babel src -d dist --source-maps inline",
-    "build:watch": "babel --watch src -d dist --source-maps inline"
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rimiti/stimmy.git"
-  },
-  "keywords": [
-    "string",
-    "manipulator",
-    "manipulation",
-    "variable",
-    "replace"
-  ],
-  "author": {
-    "name": "Dimitri DO BAIRRO",
-    "email": "dimitri.dobairro@dimsolution.com",
-    "url": "dimsolution.com"
-  },
-  "bugs": {
-    "url": "https://github.com/rimiti/stimmy/issues"
-  },
-  "engines": {
-    "node": ">=6.9"
-  },
-  "engineStrict": true,
-  "homepage": "https://github.com/rimiti/stimmy#readme",
   "devDependencies": {
-    "@babel/cli": "7.12.10",
-    "@babel/core": "7.12.10",
-    "@babel/preset-env": "7.12.11",
-    "@babel/preset-flow": "7.12.1",
-    "babel-eslint": "10.1.0",
-    "eslint": "7.18.0",
-    "eslint-config-airbnb-base": "14.2.1",
-    "eslint-plugin-flowtype": "5.2.0",
-    "eslint-plugin-import": "2.22.1",
-    "jest": "26.6.3",
-    "flow-bin": "0.143.0"
+    "@types/express": "4.17.13",
+    "@types/jest": "27.0.3",
+    "@types/lodash": "4.14.177",
+    "@types/redis": "2.8.32",
+    "@typescript-eslint/eslint-plugin": "5.4.0",
+    "@typescript-eslint/parser": "5.4.0",
+    "eslint": "8.3.0",
+    "eslint-config-prettier": "8.3.0",
+    "jest": "27.3.1",
+    "prettier": "2.4.1",
+    "ts-jest": "27.0.7",
+    "typescript": "4.5.2"
   },
-  "jest": {
-    "coverageThreshold": {
-      "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
-      }
-    },
-    "testEnvironment": "node",
-    "moduleFileExtensions": [
-      "js"
-    ],
-    "coverageDirectory": "coverage",
-    "collectCoverageFrom": [
-      "src/**/*.js"
-    ]
+  "scripts": {
+    "clean": "rm -rf dist coverage",
+    "build:clean": "yarn clean && yarn build",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "lint": "yarn prettier && yarn eslint",
+    "lint:fix": "yarn prettier:fix && yarn eslint:fix",
+    "prettier": "prettier --check '{src,__tests__}/**/*.ts'",
+    "prettier:fix": "prettier --write '{src,__tests__}/**/*.ts'",
+    "eslint": "eslint {src,__tests__}/**/*.ts",
+    "eslint:fix": "eslint --fix {src,__tests__}/**/*.ts",
+    "test": "jest",
+    "test:watch": "jest --watch"
   }
 }
