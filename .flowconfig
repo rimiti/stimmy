@@ -1,4 +1,0 @@
-[ignore]
-<PROJECT_ROOT>/coverage/.*
-<PROJECT_ROOT>/dist/.*
-<PROJECT_ROOT>/__tests__/.*

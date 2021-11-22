@@ -1,11 +1,7 @@
 # stimmy
 
-[![Dependencies][prod-dependencies-badge]][prod-dependencies]
-[![Code Climate score][codeclimate-score-badge]][codeclimate-score]
-[![Codecov][coverage-badge]][coverage]
-[![Code Climate issue][codeclimate-issues-badge]][codeclimate-issues]
-[![Build Status][travis-badge]][travis-ci]
-[![MIT License][license-badge]][LICENSE]
+[![Build][build-badge]][build]
+[![License][license-badge]][license]
 [![PRs Welcome][prs-badge]][prs]
 
 
@@ -16,7 +12,7 @@ This module provides a string variables replacer.
 ## Install
 
 ```bash
-$ npm install @rimiti/stimmy --save
+$ yarn add @rimiti/stimmy
 ```
 
 ## Features
@@ -35,12 +31,12 @@ $ npm install @rimiti/stimmy --save
 
 **From import**
 ```javascript
-import stimmy from '@rimiti/stimmy';
+import { stimmy } from '@rimiti/stimmy';
 ```
 
 **From require**
 ```javascript
-const stimmy = require('@rimiti/stimmy');
+const { stimmy } = require('@rimiti/stimmy');
 ```
 **init pattern**
 ```javascript
@@ -81,31 +77,22 @@ const str = replacer('My name is {name}, I\'m {age}.', {name: 'stimmy', age: 25}
 
 ## Scripts
 
-Run using npm run <script> command.
+Run using yarn run `<script>` command.
 
-    clean - remove coverage data, Jest cache and transpiled files,
-    lint - lint source files and tests,
-    typecheck - check type annotations,
-    test - lint, typecheck and run tests with coverage,
-    test-only - run tests with coverage,
-    test:watch - interactive watch mode to automatically re-run tests,
-    build - compile source files,
-    build:watch - interactive watch mode, compile sources on change.
+    clean       - Remove temporarily folders.
+    build       - Compile source files.
+    build:watch - Interactive watch mode, compile sources on change.
+    lint        - Lint source files.
+    lint:fix    - Fix lint source files.
+    test        - Runs all tests with coverage.
+    test:watch  - Interactive watch mode, runs tests on change.
 
 
 ## License
 MIT © [Dimitri DO BAIRRO](https://github.com/rimiti/stimmy/blob/master/LICENSE)
 
-[prod-dependencies-badge]: https://david-dm.org/rimiti/stimmy/status.svg
-[prod-dependencies]: https://david-dm.org/rimiti/stimmy
-[codeclimate-score-badge]: https://api.codeclimate.com/v1/badges/4d4c1ba660e878509721/maintainability
-[codeclimate-score]: https://codeclimate.com/github/rimiti/stimmy/maintainability
-[coverage-badge]: https://codecov.io/gh/rimiti/stimmy/branch/master/graph/badge.svg
-[coverage]: https://codecov.io/gh/rimiti/stimmy
-[codeclimate-issues-badge]: https://codeclimate.com/github/rimiti/stimmy/badges/issue_count.svg
-[codeclimate-issues]: https://codeclimate.com/github/rimiti/stimmy
-[travis-badge]: https://travis-ci.org/rimiti/stimmy.svg?branch=master
-[travis-ci]: https://travis-ci.org/rimiti/stimmy
+[build-badge]: https://github.com/rimiti/stimmy/workflows/Test/badge.svg
+[build]: https://github.com/rimiti/stimmy/actions?query=workflow%3ATest+branch%3Amaster
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
 [license]: https://github.com/rimiti/stimmy/blob/master/LICENSE
 [prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
